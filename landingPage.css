@@ -1,0 +1,51 @@
+body {
+}
+.div1 {
+  width: 100%;
+  height: 70px;
+  display: flex;
+}
+.div1 > div {
+  border: 1px solid blue;
+}
+
+/* div1 subdives */
+#imgDiv {
+  width: 6%;
+  height: 100%;
+}
+#search {
+  width: 30%;
+  border: 1px solid orange;
+}
+#download{
+  display: flex;
+  width: 10%;
+  height: 100%;
+  border: 1px solid red;
+}
+
+/* div1 subdiv components */
+#search > input {
+  width: 93%;
+  height: 40%;
+  margin-top: 5px;
+  padding: 14px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.div1 > img {
+  height: 100%;
+}
+
+#download > div {
+  border: 1px solid black;
+}
+
+#downloadImgDiv{
+  width: 30%;
+}
+#downloadTextDiv{
+  width: 60%;
+}
