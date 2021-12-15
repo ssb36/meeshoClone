@@ -11,6 +11,26 @@ body {
   /* border: 1px solid blue; */
 }
 
+/* .div2HoverNavBar {
+  height: 30px;
+} */
+.firstBannerPlayStore {
+  width: 75%;
+  height: 370px;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+}
+
+.TopCategoriesSeperator {
+  /* border: 1px solid red; */
+  width: 75%;
+  margin: auto;
+  margin-top: 20px;
+  height: 70px;
+  display: flex;
+}
+
 /* div1 subdives */
 #imgDiv {
   width: 6%;
@@ -28,25 +48,45 @@ body {
   justify-content: right;
   margin-left: 10%;
   /* border: 1px solid red; */
-  
 }
-#Supplier{
+#Supplier {
   width: 16%;
   /* border: 1px solid red; */
   text-align: center;
   margin-top: 10px;
 }
-#profile{
+#profile {
   width: 10%;
   /* border: 1px solid red; */
   text-align: center;
 }
 
-#cart{
+#cart {
   width: 10%;
   /* border: 1px solid red; */
   text-align: center;
+}
+#playLeftBanner {
+  width: 50%;
+  height: 100%;
+  background-color: #f9f9f9;
+}
+#rightModelsBanner {
+  width: 50%;
+  height: 100%;
+}
 
+.TopCategoriesSeperator > div {
+  width: 50%;
+  height: 100%;
+  /* border: 1px solid red; */
+  margin: auto;
+}
+
+#HrLineCategoriesSeperator {
+  width: 25%;
+  /* border: 1px solid #f43397; */
+  height: 2px;
 }
 
 /* div1 subdiv components */
@@ -72,4 +112,53 @@ body {
 }
 #downloadTextDiv {
   width: 60%;
+}
+#H1PlayBanner {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-left: 40px;
+  margin-top: 50px;
+}
+#FiftyLakh {
+  margin-top: 30px;
+  margin-left: 50px;
+  height: 60px;
+  width: 65%;
+  padding-left: 25px;
+  background-color: white;
+
+  border-radius: 10px;
+}
+#FiftyLakh > p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+  color: #9c8378;
+  padding-top: 15px;
+  font-size: 19px;
+}
+
+#playLeftBanner > input[type="submit"] {
+  width: 60%;
+  cursor: pointer;
+  height: 50px;
+  margin-left: 40px;
+  margin-top: 25px;
+  font-size: 18px;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  background-color: #f43397;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#H1Seperator {
+  text-align: center;
+}
+#H1Seperator > h1 {
+  font-size: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-weight: bold;
 }
