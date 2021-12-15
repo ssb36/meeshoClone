@@ -4,9 +4,11 @@ body {
   width: 100%;
   height: 70px;
   display: flex;
+  margin-bottom: 0px;
 }
+
 .div1 > div {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 /* div1 subdives */
@@ -16,13 +18,35 @@ body {
 }
 #search {
   width: 30%;
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
 }
-#download{
+#download {
   display: flex;
-  width: 10%;
+  width: 20%;
   height: 100%;
-  border: 1px solid red;
+  margin-top: 10px;
+  justify-content: right;
+  margin-left: 10%;
+  /* border: 1px solid red; */
+  
+}
+#Supplier{
+  width: 16%;
+  /* border: 1px solid red; */
+  text-align: center;
+  margin-top: 10px;
+}
+#profile{
+  width: 10%;
+  /* border: 1px solid red; */
+  text-align: center;
+}
+
+#cart{
+  width: 10%;
+  /* border: 1px solid red; */
+  text-align: center;
+
 }
 
 /* div1 subdiv components */
@@ -40,12 +64,12 @@ body {
 }
 
 #download > div {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
-#downloadImgDiv{
-  width: 30%;
+#downloadImgDiv {
+  width: 20%;
 }
-#downloadTextDiv{
+#downloadTextDiv {
   width: 60%;
 }
