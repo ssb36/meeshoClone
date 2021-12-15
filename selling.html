@@ -1,1 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            /* margin: 0px;
+            padding: 0px; */
+
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        }
+
+        .shop-item {
+            display: flex;
+            width: 80%;
+            /* border: 1px solid red; */
+            height: 650px;
+            margin: auto;
+        }
+
+        .item-img {
+            width: 50%;
+
+            margin-right: 3%;
+            border-radius: 5px;
+
+        }
+
+        .prod-img {
+            display: flex;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .prod-img>.small-img>img {
+            height: 60px;
+            width: 60px;
+            border-radius: 5px;
+            border: 1px solid red;
+            margin-right: 10px;
+        }
+
+        .prod-img>.original-img {
+            border: 1px solid #e3e3e3;
+            height: 473px;
+            width: 452px;
+
+
+
+
+        }
+
+        .prod-img>.original-img>img {
+            height: inherit;
+            margin-left: 15px;
+            align-items: stretch;
+            padding: 2px;
+
+
+
+        }
+
+        .btn-cont {
+            margin-left: 70px;
+            width: 50%;
+            margin-top: 20px;
+
+        }
+
+        .btn-cont>#cart-btn {
+            color: white;
+            background-color: #f43397;
+            width: 430px;
+            height: 50px;
+            border-radius: 5px;
+            border: 0px;
+            font-size: 20px;
+            word-spacing: 2px;
+            /* margin: auto; */
+        }
+
+        .btn-cont>.line {
+            width: 425px;
+            color: black;
+            border-bottom: 2px solid #eee;
+            margin-top: 20px;
+        }
+
+        .similar-cont>p {
+            text-align: left;
+            font-weight: bold;
+            font-size: 25px;
+            margin-left: 75px;
+        }
+
+        .similar-img {
+            display: flex;
+            margin-top: 25px;
+            margin-left: 95px;
+
+
+        }
+
+        .similar-img>div>img {
+            margin-left: 12px;
+            border: 2px solid #f43397;
+            border-radius: 5px;
+
+        }
+
+
+
+
+
+        /* here the item info */
+        .item-info {
+            width: 50%;
+            /border: 1px solid teal;
+
+        }
+
+        .item-info>div {
+            border-radius: 10px;
+            height: 217px;
+            width: 533px;
+            border: 1px solid #e3e3e3;
+            margin-bottom: 25px;
+        }
+        .sizebtn{
+            margin-left: 20px;
+            display: inline;
+            color: black;
+            background-color: white;
+            width: 100px;
+            height: 50px;
+            border-radius: 10px;
+            border: 0px;
+            font-size: 15px;
+            word-spacing: 2px;
+        }
+        
+            
+     hr,h6,h5,h2{
+           margin-left: 20px;
+        }
+    </style>
+    <!-- icon -->
+    <script>
+        document.getElementById("sizebtn").onclick = function() {onclick()};
+        //document.getElementById("sizebtn").onmouseout = function() {mouseOut()}
+        
+        function onclick() {
+          document.getElementById("sizebtn").style.color = "#f43397";
+          document.getSelection("sizebtn").style.color="#f43397"
+        }
+        
+        //function mouseOut() {
+        //  document.getElementById("demo").style.color = "black";
+        //}
+        </script>
+    <script src="https://kit.fontawesome.com/511a6cb386.js" crossorigin="anonymous"></script>
+    <!-- icon -->
+    <!-- font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!-- font-family -->
+</head>
+
+<body>
+    <div class="shop-item">
+        <div class="item-img">
+            <!-- here is the two image -->
+            <div class="prod-img">
+                <div class="small-img">
+                    <img src="https://images.meesho.com/images/products/46935384/oteoa_64.jpg" alt="">
+
+                </div>
+                <div class="original-img">
+                    <img src="https://images.meesho.com/images/products/46935384/oteoa_512.jpg" alt="">
+
+                </div>
+            </div>
+            <!-- over of the two img -->
+            <!-- btn-cont -->
+            <div class="btn-cont">
+                <button id="cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</button>
+                <div class="line"></div>
+            </div>
+            <!-- btn-cont -->
+            <div class="similar-cont">
+                <p>3 Similar Produts</p>
+                <div class="similar-img">
+                    <div class="one-img">
+                        <img src="https://images.meesho.com/images/products/46935384/oteoa_64.jpg" alt="">
+                    </div>
+                    <div class="one-img">
+                        <img src="https://images.meesho.com/images/products/46935384/oteoa_64.jpg" alt="">
+                    </div>
+                    <div class="one-img">
+                        <img src="https://images.meesho.com/images/products/46935384/oteoa_64.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item-info">
+            <div class="price-cont">
+                <h2>Fancy Fabulous Men Jeans</h2>
+
+            </div>
+            <div class="size-cont">
+                <h5>Select Size</h5>
+                <div class="sizebtn">
+                    <button>26</button> <button>28</button> <button>30</button> <button>32</button> <button>34</button> <button>36</button>
+                   
+                </div>
+            </div>
+            <div class="product-details">
+                <h5>Product Details</h5>
+            </div>
+            <div class="sold-cont">
+                <h5>Sold By</h5>
+            </div>
+            <div class="rating-cont">
+                <h2>Product Ratings & Reviews</h2>
+                <hr style="background-color: black;">
+                <h6>Real Images and videos from customers</h6>
+            </div>
+        </div>
+        <div class="trust_me">
+            <p>Best quality products from trusted suppliers</p>
+        </div>
+
+    </div>
+    </div>
+</body>
+
+</html>
