@@ -1,4 +1,5 @@
 body {
+  margin-bottom: 500px;
 }
 .div1 {
   width: 100%;
@@ -28,6 +29,16 @@ body {
   margin: auto;
   margin-top: 20px;
   height: 70px;
+  display: flex;
+}
+
+.fashionStore {
+  width: 75%;
+  height: 450px;
+  margin: auto;
+  margin-top: 20px;
+  background-color: #fce1d1;
+  border-radius: 5px;
   display: flex;
 }
 
@@ -70,8 +81,10 @@ body {
   width: 50%;
   height: 100%;
   background-color: #f9f9f9;
+  border-radius: 5px;
 }
 #rightModelsBanner {
+  border-radius: 5px;
   width: 50%;
   height: 100%;
 }
@@ -87,6 +100,22 @@ body {
   width: 25%;
   /* border: 1px solid #f43397; */
   height: 2px;
+}
+
+#fashionStoreLeftDiv {
+  /* border: 1px solid red; */
+  padding: 15px;
+  width: 35%;
+}
+#fashionStoreRightDiv {
+  /* border: 1px solid red; */
+  padding: 12px;
+  width: 65%;
+}
+#fashionStoreRightDiv > div {
+  display: flex;
+  /* border: 1px solid red; */
+  height: 60%;
 }
 
 /* div1 subdiv components */
@@ -160,5 +189,32 @@ body {
   font-size: 30px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    font-weight: bold;
+  font-weight: bold;
+}
+
+#rightModelsBanner > img {
+  border-radius: 5px;
+}
+
+#imgLeftfashionStore {
+  margin-top: 14%;
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+}
+
+.imgLeftDivfashionStore {
+  /* border: 1px solid greenyellow; */
+  width: 80%;
+  height: 60%;
+}
+.westernWearMensWear {
+  /* border: 1px solid black; */
+  display: flex;
+}
+#fashionStoreRightDiv > div > div {
+  margin-left: 25px;
+}
+#fashionStoreRightDiv > div > div > img {
+  border-radius: 2px;
 }
