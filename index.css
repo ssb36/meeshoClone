@@ -8,13 +8,63 @@ body {
   margin-bottom: 0px;
 }
 
-.div1 > div {
-  /* border: 1px solid blue; */
+#imgDiv {
+  width: 6%;
+  height: 100%;
 }
 
-/* .div2HoverNavBar {
-  height: 30px;
-} */
+#search {
+  width: 30%;
+  /* border: 1px solid orange; */
+}
+
+#download {
+  display: flex;
+  width: 20%;
+  height: 100%;
+  margin-top: 10px;
+  justify-content: right;
+  margin-left: 10%;
+  /* border: 1px solid red; */
+}
+#Supplier {
+  width: 16%;
+  /* border: 1px solid red; */
+  text-align: center;
+  margin-top: 10px;
+}
+#profile {
+  width: 10%;
+  /* border: 1px solid red; */
+  text-align: center;
+}
+
+#cart {
+  width: 10%;
+  /* border: 1px solid red; */
+  text-align: center;
+}
+
+#search > input {
+  width: 93%;
+  height: 40%;
+  margin-top: 5px;
+  padding: 14px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.div1 > img {
+  height: 100%;
+}
+
+#downloadImgDiv {
+  width: 20%;
+}
+#downloadTextDiv {
+  width: 60%;
+}
+
 .firstBannerPlayStore {
   width: 75%;
   height: 370px;
@@ -43,40 +93,7 @@ body {
 }
 
 /* div1 subdives */
-#imgDiv {
-  width: 6%;
-  height: 100%;
-}
-#search {
-  width: 30%;
-  /* border: 1px solid orange; */
-}
-#download {
-  display: flex;
-  width: 20%;
-  height: 100%;
-  margin-top: 10px;
-  justify-content: right;
-  margin-left: 10%;
-  /* border: 1px solid red; */
-}
-#Supplier {
-  width: 16%;
-  /* border: 1px solid red; */
-  text-align: center;
-  margin-top: 10px;
-}
-#profile {
-  width: 10%;
-  /* border: 1px solid red; */
-  text-align: center;
-}
 
-#cart {
-  width: 10%;
-  /* border: 1px solid red; */
-  text-align: center;
-}
 #playLeftBanner {
   width: 50%;
   height: 100%;
@@ -119,29 +136,7 @@ body {
 }
 
 /* div1 subdiv components */
-#search > input {
-  width: 93%;
-  height: 40%;
-  margin-top: 5px;
-  padding: 14px;
-  border: 1px solid #aaa;
-  border-radius: 5px;
-}
 
-.div1 > img {
-  height: 100%;
-}
-
-#download > div {
-  /* border: 1px solid black; */
-}
-
-#downloadImgDiv {
-  width: 20%;
-}
-#downloadTextDiv {
-  width: 60%;
-}
 #H1PlayBanner {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
