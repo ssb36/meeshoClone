@@ -289,3 +289,66 @@ body {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   cursor: pointer;
 }
+
+/* play store And Apple Store downlaod link*/
+
+.playAppleStore {
+  width: 75%;
+  height: 550px;
+  margin: auto;
+  margin-top: 50px;
+  background-image: url("https://meesho.com/_next/static/images/download_banner-19ca4d63d9c1dc44bc8cbfae62b60bd7.jpg");
+  border-radius: 5px;
+  /* border: 1px solid black; */
+  display: flex;
+  text-align: right;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.playAppleStore > div {
+  /* border: 1px solid red; */
+}
+.playAppleStore > div:nth-child(1) {
+  width: 50%;
+}
+
+.playAppleStore > div:nth-child(2) {
+  margin-top: 50px;
+  width: 50%;
+  margin-right: 25px;
+}
+#h2PlayAppleStore {
+  margin-top: 70px;
+  color: #5b8ef7;
+  font-weight: bold;
+}
+#h1PlayAppleStore {
+  color: #f43b9b;
+  font-weight: bold;
+}
+#rightPlayAppleStoreDiv > div {
+  height: 50%;
+  /* border: 1px solid green; */
+}
+#lowerImgDiv {
+  display: flex;
+}
+#lowerImgDiv > div {
+  /* border: 1px solid blue; */
+  width: 25%;
+  height: 10%;
+  padding: 10px;
+  text-align: center;
+  background-color: black;
+  border-radius: 3px;
+
+  margin: auto;
+  margin-top: 10px;
+}
+#imgPlayApple {
+  height: 100%;
+  width: 100%;
+}
+#lowerImgDiv > div:nth-child(1) {
+  margin-left: 30%;
+}
