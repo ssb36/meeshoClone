@@ -186,10 +186,14 @@
     
 }
 .textarea{
-    height: 280px;
-    width: 300px;
+    height: 200px;
+    width: 310px;
     margin-top: 20px;
     border-radius: 5px;
+    margin-left: 40px;
+}
+.textarea>span{
+    font-size: x-small;
 }
 .sold-cont{
     margin-top: 15px;
@@ -209,7 +213,7 @@
 }
 .name>div{
     margin-left: 10px;
-    width: 60%;
+    width: 90%;
 }
 h4,h5{
     margin-left: 20px;
