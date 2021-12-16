@@ -1,407 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        * {
-            /* margin: 0px;
-            padding: 0px; */
-
-            box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-        }
-
-        .shop-item {
-            display: flex;
-            width: 80%;
-            /* border: 1px solid red; */
-            height: 650px;
-            margin: auto;
-        }
-
-        .item-img {
-            width: 50%;
-
-            margin-right: 3%;
-            border-radius: 5px;
-
-        }
-
-        .prod-img {
-            display: flex;
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-        .prod-img>.small-img>img {
-            height: 60px;
-            width: 60px;
-            border-radius: 5px;
-            border: 1px solid red;
-            margin-right: 10px;
-        }
-
-        .prod-img>.original-img {
-            border: 1px solid #e3e3e3;
-            height: 473px;
-            width: 452px;
-
-
-
-
-        }
-
-        .prod-img>.original-img>img {
-            height: inherit;
-            margin-left: 15px;
-            align-items: stretch;
-            padding: 2px;
-
-
-
-        }
-
-        .btn-cont {
-            margin-left: 70px;
-            width: 50%;
-            margin-top: 20px;
-
-        }
-
-        .btn-cont>#cart-btn {
-            color: white;
-            background-color: #f43397;
-            width: 430px;
-            height: 50px;
-            border-radius: 5px;
-            border: 0px;
-            font-size: 20px;
-            word-spacing: 2px;
-            /* margin: auto; */
-        }
-
-        .btn-cont>.line {
-            width: 425px;
-            color: black;
-            border-bottom: 2px solid #eee;
-            margin-top: 20px;
-        }
-
-        .similar-cont>p {
-            text-align: left;
-            font-weight: bold;
-            font-size: 25px;
-            margin-left: 75px;
-        }
-
-        .similar-img {
-            display: flex;
-            margin-top: 25px;
-            margin-left: 95px;
-
-
-        }
-
-        .similar-img>div>img {
-            margin-left: 12px;
-            border: 2px solid #f43397;
-            border-radius: 5px;
-
-        }
-
-
-
-
-
-        /* here the item info */
-        .item-info {
-            width: 50%;
-            border: 1px solid teal;
-
-        }
-
-        .item-info>div {
-            border-radius: 10px;
-            height: 217px;
-            width: 533px;
-            border: 1px solid #e3e3e3;
-            margin-bottom: 25px;
-        }
-
-        .sizebtn {
-            margin-left: 20px;
-            display: inline;
-            color: black;
-            background-color: white;
-            width: 100px;
-            height: 50px;
-            border-radius: 10px;
-            border: 0px;
-            font-size: 15px;
-            word-spacing: 2px;
-        }
-
-
-        h6,h5,h2 {
-            margin-left: 20px;
-        }
-
-        .sold-cont {
-margin-left: 20px;
-        }
-
-        
-        .rating-cont {
-            font-family: Arial;
-            margin-left: 0px;
-            max-width: 600px;
-            /* Max width */
-            height: 600px;
-            padding: 10px;
-            grid: flex;
-        }
-
-        .rating-cont>div {
-            width: 100%;
-
-
-        }
-
-        .fa {
-            font-size: 20px;
-        }
-
-        .checked {
-            color: orange;
-        }
-
-        /* Three column layout */
-        .side {
-            float: left;
-            width: 15%;
-            margin-top: 5px;
-        }
-
-        .middle {
-            float: left;
-            width: 70%;
-            margin-top: 10px;
-        }
-
-        /* Place text to the right */
-        .right {
-            text-align: right;
-        }
-
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        /* The bar container */
-        .bar-container {
-            width: 90%;
-            background-color: #f1f1f1;
-            text-align: center;
-            color: white;
-        }
-
-        hr {
-            margin-left: 20px;
-            color: #616263;
-        }
-
-        /* Individual bars */
-        .bar-5 {
-            width: 60%;
-            height: 7px;
-            background-color: #04AA6D;
-        }
-
-        .bar-4 {
-            width: 30%;
-            height: 7px;
-            background-color: #2196F3;
-        }
-
-        .bar-3 {
-            width: 10%;
-            height: 7px;
-            background-color: #00bcd4;
-        }
-
-        
-    </style>
+   <!-- css link -->
+   <link rel="stylesheet" href="style.css">
     <!-- icon -->
-    <script>
-        
-        document.getElementById("sizebtn").onclick = function () { onclick() };
-        //document.getElementById("sizebtn").onmouseout = function() {mouseOut()}
-
-        function onclick() {
-            document.getElementById("sizebtn").style.color = "#f43397";
-            document.getSelection("sizebtn").style.color = "#f43397"
-        }
-
-        //function mouseOut() {
-        //  document.getElementById("demo").style.color = "black";
-        //}
-    </script>
-    <script src="https://kit.fontawesome.com/yourcode.js"crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/511a6cb386.js" crossorigin="anonymous"></script>
-    <!-- icon -->
-    <!-- font-family -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <!-- font-family -->
+        <script src="https://kit.fontawesome.com/511a6cb386.js" crossorigin="anonymous"></script>
+        <!-- icon -->
+        <!-- font-family -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<!-- font-family -->
 </head>
-
 <body>
-    <div class="shop-item">
-        <div class="item-img">
-            <!-- here is the two image -->
-            <div class="prod-img">
-                <div class="small-img">
+
+
+<!-- nav bar -->
+   <div class="shop-item">
+       <div class="item-img">
+           <!-- here is the two image -->
+           <div class="prod-img">
+               <div class="small-img">
+                   <img src="https://images.meesho.com/images/products/46935384/oteoa_64.jpg" alt="">
+
+               </div>
+               <div class="original-img">
+                   <img src="https://images.meesho.com/images/products/46935384/oteoa_512.jpg" alt="">
+
+               </div>
+           </div>
+           <!-- over of the two img -->
+           <!-- btn-cont -->
+           <div class="btn-cont">
+           <button id="cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</button>
+            <div class="line"></div>
+        </div>
+          <!-- btn-cont -->
+          <div class="similar-cont">
+              <p>3 Similar Produts</p>
+              <div class="similar-img">
+                  <div class="one-img">
+                      <img src="https://images.meesho.com/images/products/46935384/oteoa_64.jpg" alt="">
+                  </div>
+                  <div class="one-img">
                     <img src="https://images.meesho.com/images/products/46935384/oteoa_64.jpg" alt="">
+                </div>
+                <div class="one-img">
+                    <img src="https://images.meesho.com/images/products/46935384/oteoa_64.jpg" alt="">
+                </div>
+              </div>
+          </div>
+       </div>
 
-                </div>
-                <div class="original-img">
-                    <img src="https://images.meesho.com/images/products/46935384/oteoa_512.jpg" alt="">
+       <div class="item-info">
+         <div class="title">
+            <p>BUAGI COLLECTION MEN'S BOTTOM WEARS}] Black Jeans, Denim Fabric With Good Quality And Design</p>
+          </div>
+           <div class="price-cont">
+              
+            
+              <div class="price">
+                  <div class="main-price">  <h2>₹619</h2></div>
+              
+               <div class="line-price"><p>₹719 </p></div> 
 
-                </div>
-            </div>
-            <!-- over of the two img -->
-            <!-- btn-cont -->
-            <div class="btn-cont">
-                <button id="cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</button>
-                <div class="line"></div>
-            </div>
-            <!-- btn-cont -->
-            <div class="similar-cont">
-                <p>3 Similar Produts</p>
-                <div class="similar-img">
-                    <div class="one-img">
-                        <img src="https://images.meesho.com/images/products/46935384/oteoa_64.jpg" alt="">
-                    </div>
-                    <div class="one-img">
-                        <img src="https://images.meesho.com/images/products/46935384/oteoa_64.jpg" alt="">
-                    </div>
-                    <div class="one-img">
-                        <img src="https://images.meesho.com/images/products/46935384/oteoa_64.jpg" alt="">
-                    </div>
-                </div>
-            </div>
+               <div class="off"><p> 14% off</p></div> 
+                  
+                
+              </div>
+              <div class="disc">
+                <p>₹100 discount on 1st order</p>   
+              </div>
+              <div class="del">
+                  <p>Free Delivery
+                </p>
+              </div>
+         
         </div>
-        <div class="item-info">
-            <div class="price-cont">
-                <h2>Fancy Fabulous Men Jeans</h2>
+           <div class="size-cont">
+            <h2>Select Size
+            </h2>
+            <div class="item-size">
+             <div class="size"><p>28</p></div>
+             <div class="size"><p>28</p></div>
+
+             <div class="size"><p>28</p></div>
+
+             <div class="size"><p>28</p></div>
 
             </div>
-            <div class="size-cont">
-                <h5>Select Size</h5>
-                <div class="sizebtn">
-                    <button>26</button> <button>28</button> <button>30</button> <button>32</button> <button>34</button>
-                    <button>36</button>
+           </div>
+           <div class="product-details">
+               <div class="textarea">
+                   <textarea name="" id="" cols="80" rows="20">
+                    Product Details
+                    Fabric : Denim
+                    
+                    Pattern : Dyed/Washed
+                    
+                    Multipack : 1
+                    
+                    {[Here we present you the Best Bottom wear from BuaGi Collection for Men in this Catalogue]} Wearing our latest pair of Men's Jeans with perfect pair of tshirt or shirt will elegance your beauty. You can wear our Men's Jeans Slim Fit for Casual as well as for Formal Wear occasion. BuaGi Collection never compromises in quality & offer Jeans For Men at reasonable price. Our Jeans pants for Men will make you more comfortable.
+                    
+                    Sizes : 
+                    34 (Waist Size : 34 in, Length Size: 42 in)
+                    
+                    36 (Waist Size : 36 in, Length Size: 42 in)
+                    
+                    28 (Waist Size : 28 in, Length Size: 42 in)
+                    
+                    30 (Waist Size : 30 in, Length Size: 42 in)
+                    
+                    32 (Waist Size : 32 in, Length Size: 42 in)
+                    
+                    {[Here we present you the Best Bottom wear from BuaGi Collection for Men in this Catalogue]} Wearing our latest pair of Men's Jeans with perfect pair of tshirt or shirt will elegance your beauty. You can wear our Men's Jeans Slim Fit for Casual as well as for Formal Wear occasion. BuaGi Collection never compromises in quality & offer Jeans For Men at reasonable price. Our Jeans pants for Men will make you more comfortable.
+                    <p>Fabric : Denim</p>
+                   </textarea>
+               </div>
 
+           </div>
+           <div class="sold-cont">
+               <h2>Sold By </h2>
+                <div class="name">
+                    <div class="div">  <p>SHUCHIKA TRADERS  </p></div>
+                    <div class="div"><button>View Shop</button></div>
+                  
                 </div>
-            </div>
-            <div class="product-details">
-                <h5>Product Details</h5>
-            </div>
-            <div class="sold-cont">
-                <h5>Sold By</h5>
-                <i class="fa-thin fa-shop"></i>
-            </div>
-            <div class="rating-cont">
-                <h2>Product Ratings & Reviews</h2>
+           </div>
+           <div class="rating-cont">
 
-                <!-- Add icon library -->
-                <link rel="stylesheet"
-                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+           </div>
 
-                <p>4.1 average based on 254 reviews.</p>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-
-                <hr style="border:3px solid #f1f1f1">
-
-                <div class="row">
-                    <div class="side">
-                        <div>5 star</div>
-                    </div>
-                    <div class="middle">
-                        <div class="bar-container">
-                            <div class="bar-5"></div>
-                        </div>
-                    </div>
-                    <div class="side right">
-                        <div>150</div>
-                    </div>
-                    <div class="side">
-                        <div>4 star</div>
-                    </div>
-                    <div class="middle">
-                        <div class="bar-container">
-                            <div class="bar-4"></div>
-                        </div>
-                    </div>
-                    <div class="side right">
-                        <div>63</div>
-                    </div>
-                    <div class="side">
-                        <div>3 star</div>
-                    </div>
-                    <div class="middle">
-                        <div class="bar-container">
-                            <div class="bar-3"></div>
-                        </div>
-                    </div>
-                    <div class="side right">
-                        <div>15</div>
-                    </div>
-                    <div class="side">
-                        <div>2 star</div>
-                    </div>
-                    <div class="middle">
-                        <div class="bar-container">
-                            <div class="bar-2"></div>
-                        </div>
-                    </div>
-                    <div class="side right">
-                        <div>6</div>
-                    </div>
-                    <div class="side">
-                        <div>1 star</div>
-                    </div>
-                    <div class="middle">
-                        <div class="bar-container">
-                            <div class="bar-1"></div>
-                        </div>
-                    </div>
-                    <div class="side right">
-                        <div>20</div>
-                    </div>
-                </div>
-                <hr style="background-color: black;">
-                <h6>Real Images and videos from customers</h6>
-            </div>
-        </div>
-        <div class="trust_me">
-            <p>Best quality products from trusted suppliers</p>
-        </div>
-
-    </div>
-    </div>
+       </div>
+   </div> 
 </body>
-
 </html>
+<script src="app.js"></script>
