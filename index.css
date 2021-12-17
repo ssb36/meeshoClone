@@ -11,11 +11,13 @@ body {
 #imgDiv {
   width: 10%;
   height: 100%;
+  margin-left: 90px;
 }
 
 #search {
-  margin-left: 200px;
-  width: 40%;
+  margin-left: 90px;
+  width: 50%;
+  height: 150px;
   /* border: 1px solid orange; */
 }
 
@@ -25,7 +27,7 @@ body {
   height: 100%;
   margin-top: 5px;
   justify-content: right;
-  margin-left: 10%;
+  margin-left: 5%;
   /* border: 1px solid red; */
 }
 #Supplier {
@@ -311,7 +313,8 @@ body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-.playAppleStore > div {
+.playAppleStore>div{
+  margin: 0%;
   /* border: 1px solid red; */
 }
 .playAppleStore > div:nth-child(1) {
