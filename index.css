@@ -11,22 +11,15 @@ body {
 #imgDiv {
   width: 10%;
   height: 100%;
-<<<<<<< HEAD
   margin-left: 20px;
 }
 
 #search {
-  width: 40%;
-  padding: 15px;
-=======
-  margin-left: 90px;
-}
-
-#search {
+  /* width: 40%;
+  padding: 15px; */
   margin-left: 90px;
   width: 50%;
   height: 150px;
->>>>>>> 30851059c1eda66c5623b400846ec511787e6e3a
   /* border: 1px solid orange; */
 }
 
@@ -36,12 +29,8 @@ body {
   height: 100%;
   margin-top: 5px;
   justify-content: right;
-<<<<<<< HEAD
-  margin-left: 10%;
-  cursor: pointer;
-=======
   margin-left: 5%;
->>>>>>> 30851059c1eda66c5623b400846ec511787e6e3a
+  cursor: pointer;
   /* border: 1px solid red; */
 }
 #Supplier {
@@ -330,7 +319,7 @@ body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-.playAppleStore>div{
+.playAppleStore > div {
   margin: 0%;
   /* border: 1px solid red; */
 }
@@ -596,12 +585,9 @@ nav > ul > li:hover > a {
   clear: both;
 }
 
-
-
 /* -------------------shopNoneStop------------------------------- */
 
-
-.shopNonStop{ 
+.shopNonStop {
   width: 100%;
   height: 300px;
   border: 1px solid red;
@@ -609,17 +595,14 @@ nav > ul > li:hover > a {
   display: flex;
   margin-top: 50px;
 }
-#bigDivsShopNonStop{
-
+#bigDivsShopNonStop {
   width: 30%;
   height: 100%;
   margin: auto;
   margin-top: 20px;
   border: 1px solid black;
-  
-
 }
-#smallDivsShopNonStop{
+#smallDivsShopNonStop {
   width: 18%;
   height: 100%;
   border: 1px solid black;
@@ -627,37 +610,35 @@ nav > ul > li:hover > a {
   margin-top: 20px;
 }
 
-#playAppleBigDivShopNonStop{
+#playAppleBigDivShopNonStop {
   display: flex;
-
 }
-#bigDivsShopNonStop>h4{
+#bigDivsShopNonStop > h4 {
   color: rgb(51, 51, 51);
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
   line-height: 40px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin-top: 20px;
   margin-left: 20px;
   padding: 0px;
 }
-#bigDivsShopNonStop>p{
+#bigDivsShopNonStop > p {
   color: rgb(102, 102, 102);
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin: 20px;
   padding: 0px;
 }
-#playAppleBigDivShopNonStop>div{
-
+#playAppleBigDivShopNonStop > div {
   height: 45px;
   width: 150px;
   margin: 20px;
   cursor: pointer;
 }
-
-
