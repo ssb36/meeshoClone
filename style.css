@@ -805,7 +805,7 @@
 /* here the item info */
 .item-info{
     width: 548px;
-    height: 196px;
+    height: 260px;
     border: 1px solid #e3e3e3;
     border-radius: 5px;
   width: 50%;
@@ -815,39 +815,38 @@
 }
 .item-info>.title{
     color: #999999;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
  height: 70px;
- margin-bottom: -30px;
+ margin-bottom: -40px;
 
 }
 
 
 .price{
- 
-   
     display: flex;
    width: 100%;
-   margin-top: 5px;
-   margin-bottom: 15px;
-  
+   margin-top: 6px;
+   margin-bottom: 0px;
    align-items:stretch;
    height: 40px;
 }
 
 .price>.main-price{
     margin-left: 18px;
+    font-size: larger;
+    font-size: 25px;
     
 }
 .price>.line-price{
     text-decoration: line-through;
     justify-content: center;
     margin-left: 15px;
-    margin-top: 12px;
+    margin-top: 0px;
     color: #999999;
 }
 .disc>p{
-    font-size: 16px;
+    font-size: 15px;
     color: #666666;
 }
 .del>p{
@@ -862,21 +861,24 @@
     font-size: 18px;
     color: #038d63;
     margin-left: 25px;
-    margin-top: 5px;
+    margin-top: 0px;
     
 }
+
 .size-cont{
-    height: 135px;
-    width: 535px;
+    height: 110px;
+    width: 470px;
     border: 1px solid #e3e3e3;
     border-radius: 5px;
     margin-top: 45px;
     padding-left: 15px;
 }
+.
 .item-size{
     display: flex;
    
 }
+
 .item-size>div>p{
     background-color: transparent;
     border: 1px solid rgb(87, 86, 86);
@@ -887,19 +889,24 @@
     padding-left: 5px;
     
 }
+.product-details{
+  height: 320px;
+  width: 450px;
+  
+}
 .textarea{
     height: 200px;
     width: 310px;
-    margin-top: 20px;
     border-radius: 5px;
-    margin-left: 40px;
+    margin-left: 10px;
+    color :gray;
 }
 .textarea>span{
-    font-size: x-small;
+    font-size: large;
 }
 .sold-cont{
-    margin-top: 15px;
-    height: 215px;
+    margin-top: 10px;
+    height: 235px;
     width: 549px;
     border: 1px solid #e3e3e3;
     
@@ -918,7 +925,8 @@
     width: 90%;
 }
 h4,h5{
-    margin-left: 20px;
+    margin-left: 0px;
+    font-size: larger;
 }
 .name>div>a>button{
     border: 1px solid #f43397;
@@ -934,4 +942,76 @@ h4,h5{
     color: blue;
     width: 50px;
     font-size: large;
+}
+.rating-cont{
+  height: 550px;
+  width: 500px;
+  font-family: Arial;
+  margin: 0 auto; /* Center website */
+  max-width: 800px; /* Max width */
+  padding: 20px;
+}
+
+.heading {
+  font-size: 25px;
+  margin-right: 25px;
+}
+
+.fa {
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
+
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top: 10px;
+}
+
+.middle {
+  float: left;
+  width: 70%;
+  margin-top: 10px;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+/* Individual bars */
+.bar-5 {width: 60%; height: 8px; background-color: #04AA6D;}
+.bar-4 {width: 30%; height: 8px; background-color: #2196F3;}
+.bar-3 {width: 10%; height: 8px; background-color: #00bcd4;}
+.bar-2 {width: 4%; height: 8px; background-color: #ff9800;}
+.bar-1 {width: 15%; height: 8px; background-color: #f44336;}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+  .side, .middle {
+    width: 100%;
+  }
+  /* Hide the right column on small screens */
+  .right {
+    display: none;
+  }
 }
