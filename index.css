@@ -11,12 +11,22 @@ body {
 #imgDiv {
   width: 10%;
   height: 100%;
+<<<<<<< HEAD
   margin-left: 20px;
 }
 
 #search {
   width: 40%;
   padding: 15px;
+=======
+  margin-left: 90px;
+}
+
+#search {
+  margin-left: 90px;
+  width: 50%;
+  height: 150px;
+>>>>>>> 30851059c1eda66c5623b400846ec511787e6e3a
   /* border: 1px solid orange; */
 }
 
@@ -26,8 +36,12 @@ body {
   height: 100%;
   margin-top: 5px;
   justify-content: right;
+<<<<<<< HEAD
   margin-left: 10%;
   cursor: pointer;
+=======
+  margin-left: 5%;
+>>>>>>> 30851059c1eda66c5623b400846ec511787e6e3a
   /* border: 1px solid red; */
 }
 #Supplier {
@@ -315,6 +329,10 @@ body {
   text-align: right;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.playAppleStore>div{
+  margin: 0%;
+  /* border: 1px solid red; */
 }
 .playAppleStore > div:nth-child(1) {
   width: 50%;
