@@ -14,7 +14,8 @@ body {
 }
 
 #search {
-  width: 30%;
+  margin-left: 200px;
+  width: 40%;
   /* border: 1px solid orange; */
 }
 
@@ -411,4 +412,161 @@ body {
   font-size: 18px;
   margin: auto;
   font-weight: 600;
+}
+
+/* -------------------------Half Navbar-------------------------------------- */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* #Universal and Default Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.container {
+  width: 940px;
+  color: #ddd;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+}
+
+.ul-reset {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+/* #Navigation Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+nav {
+  background: white;
+  font-size: 0;
+  position: relative;
+}
+
+nav > ul > li {
+  display: inline-block;
+  font-size: 14px;
+  padding: 0 15px;
+  position: relative;
+}
+
+nav > ul > li:first-child {
+  padding-left: 0;
+}
+
+nav > ul > li:last-child {
+  padding-right: 0;
+}
+
+nav > ul > li > a {
+  color: black;
+  display: block;
+  position: relative;
+  padding: 20px 0;
+  border-bottom: 3px solid transparent;
+}
+
+nav > ul > li:hover > a {
+  color: #f43698;
+  border-bottom: 5px solid#f43698;
+}
+
+/* #Mega Menu Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.mega-menu {
+  background: #f0f0f0;
+  display: none;
+  left: 0;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+}
+
+.mega-menu h3 {
+  color: #f00ebf;
+}
+
+.mega-menu ul {
+  float: left;
+  margin-bottom: 20px;
+  margin-right: 40px;
+  width: 205px;
+}
+
+.mega-menu ul:last-child {
+  margin-right: 0;
+}
+
+.mega-menu a {
+  border-bottom: 1px solid #ddd;
+  color: rgb(58, 58, 58);
+  display: block;
+  padding: 10px 0;
+}
+
+.mega-menu a:hover {
+  color: black;
+  font-weight: bold;
+}
+
+/* #Droppable Class Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.droppable {
+  position: static;
+}
+
+.droppable > a:after {
+  content: "\f107";
+  font-family: FontAwesome;
+  font-size: 12px;
+  padding-left: 6px;
+  position: relative;
+  top: -1px;
+}
+
+.droppable:hover .mega-menu {
+  display: block;
+}
+
+/* #Browser Clearfix
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after {
+  clear: both;
 }
