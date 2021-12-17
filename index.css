@@ -1,8 +1,8 @@
 body {
-  margin-bottom: 500px;
+  margin-bottom: 50px;
 }
 header {
-  box-shadow: 0 2px 4px 0 rgba(90, 90, 90, .5);
+  box-shadow: 0 2px 4px 0 rgba(90, 90, 90, 0.5);
   background-color: #fff;
   z-index: 10000;
   position: fixed;
@@ -713,4 +713,53 @@ nav > ul > li:hover > a {
   border-radius: 5px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+/* ----------------------------lastDiv--------------------------------- */
+
+#lastDiv {
+  width: 95%;
+  height: 1700px;
+  margin: auto;
+  border: 1px solid #e1e1e1;
+  padding: 10px;
+  padding-left: 25px;
+  border-radius: 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: white;
+}
+#spanLast {
+  color: rgb(51, 51, 51);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: initial;
+  margin: 0px;
+  padding: 0px;
+}
+
+#lastDiv > div {
+  margin-top: 20px;
+}
+#lastDiv > div > p {
+  color: #716b66;
+  font-size: 16px;
+  line-height: 22px;
+}
+.lastDiv {
+  /* border: 1px solid red; */
+  width: 100%;
+  background-color: #f9f9f9;
+  margin-bottom: 50px;
+}
+
+#pink {
+  color: #f87fa9;
+}
+#bottomTrendindBar {
+  color: #f87fa9;
+  line-height: 28px;
 }
