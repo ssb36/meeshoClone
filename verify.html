@@ -12,7 +12,7 @@
         #container{
            
             width: 30%;
-            height: px;
+            height: 900px;
             margin: auto;
             margin-top: 10%;
             background-color:white ;
@@ -34,14 +34,20 @@
             padding: 8px;
             border: none;
             border-bottom: 1px solid grey;
-            width: 50%;
-            margin-left: 20px;
+            width: 60%;
+            margin-left: 40px;
+            margin-bottom: 10px;
         }
         #num>p{
             margin-left: 40px;
             margin-bottom: 0px;
             color: grey;
-            
+        }
+        #num>h2{
+            color: rgb(244,51,151);
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 40px;
         }
         span{
             margin-left: 40px;
@@ -75,10 +81,11 @@
     <div id="container"> 
         <img src="https://meesho.com/_next/static/images/authTopBanner-6792b3e68f63d623b8ba99556d38d56d.jpg" alt="banner">
         <div id="num">
-            <h1>Sign Up to view your profile</h1>
-            <p>country</p>
-            <span>IN +91</span><input placeholder="Phone Number" type="tel"> <br>
-            <button onclick="sendOtp()">Sent OTP</button>
+            <h1>Enter OTP sent to 9864775478</h1>
+            <h2>CHANGE NUMBER</h2>
+            <input placeholder="Enter OTP" type="tel"> <br>
+            <h2>CHANGE NUMBER</h2>
+            <button onclick="verifyOtp()">Verify</button>
         </div>
         <div id="end">
             <p>By continuing, you agree to Meesho's </p>
@@ -88,8 +95,8 @@
 </body>
 </html>
 <script>
-    function sendOtp(){
-        alert("OTP Sent")
-        window.location.href ="verify.html"
+    function verifyOtp(){
+        alert("Successful")
+        window.location.href="#"
     }
 </script>
