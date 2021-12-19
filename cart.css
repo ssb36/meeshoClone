@@ -60,3 +60,43 @@
     text-align: right;
     height: 30px;
 }
+
+#firstdiv{
+    width: 100%;
+   
+    display: flex;
+    /* justify-content: space-between; */
+}
+#itemimage{
+    width: 25%;
+}
+#itemimage{
+    margin: 3%;
+    border: 1px solid gray;
+}
+#supplierinfo{
+    width: 100%;
+    height: 35px;
+    padding-left: 20px;
+    font-size: 20px;
+    color: gray;
+}
+#editbutton{
+    color: #f43397;
+    background-color: white;
+    border: none;
+    font-size: 18px;
+}
+#itemnameqty{
+    width: 80%;
+    margin-left: 5px;    
+}
+#edititem{
+    width: auto;
+    text-align: right;
+}
+#itemslist{
+    border: 1px solid gray;
+    margin-right: 20px;
+    margin-top: 20px;
+}
