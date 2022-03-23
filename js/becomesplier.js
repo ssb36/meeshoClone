@@ -1,9 +1,9 @@
 document.querySelector("#btn1").addEventListener("click" , function(){
-    window.location.href = "signin.html";
+    window.location.href = "../pages/signin.html";
     
 });
 document.querySelector("#btn2").addEventListener("click" , function(){
-    window.location.href = "login.html";
+    window.location.href = "../pages/login.html";
 });
 
 

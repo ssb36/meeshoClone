@@ -5,32 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Address</title>
+    <title>Payment</title>
     <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/8/80/Meesho_Logo_Full.png"
         type="image/x-icon">
-    <link rel="stylesheet" href="address.css">
+    <link rel="stylesheet" href="../style/payment.css">
 </head>
 
 <body>
     <div id="cartheader">
-        <p id="logo"><a href="https://meesho.com"><img src="headerLogo.png" alt="meesho logo" height="70%"></a></p>
-        <p id="cart"><img src="addressheader.png" alt="" height="90%"></p>
+        <p id="logo"><a href="https://meesho.com"><img src="../img/headerLogo.png" alt="meesho logo" height="70%"></a></p>
+        <p id="cart"><img src="../img/paymentheader.png" alt="" height="90%"></p>
     </div>
     <hr>
     <div id="cartbody">
-        <div id="addressleft">
-            <table id="addresshead">
-                <tr>
-                    <td style="width: 50%;"><span id="selectdeliveryaddress">Select Delivery Address</span></td>
-                    <td style="text-align: right; width: 50%;"><button id="addressbutton">+ADD NEW ADDRESS</button></td>
-                </tr>
-
-            </table>
+        <div id="paymentleft">
             <div>
-                <div id="deliverto"><a href="payment.html"><button id="delivertothisaddress">Deliver to this Address</button></a>
-                </div>
-
+                <h3>Payment Method</h3>
             </div>
+            <div style="padding-right: 20px;"><img src="../img/cod.png" alt="" id="cod"></div>
+            <div>
+                <div id="sellingtocustomer">
+                    <div><span style="font-size: 25px;">Selling to a customer?</span><br><span
+                            style="color: gray;">Click on 'Yes' to add Customer Price</span></div>
+                    <div style="padding-right: 20px;">
+                        <button class="button">No</button>
+                        <button class="button">Yes</button>
+
+                    </div>
+                </div>
+            </div>
+
         </div>
         <div id="pricedetails_right">
             <table id="pricedetails">
@@ -59,10 +63,20 @@
                     <th class="column2" style="font-size: 20px;
                     color: black; ">₹521</th>
             </table>
-            <!-- <p style="text-align: center; background-color: #f9f9f9; height: 20px;">Clicking on 'Continue' will not deduct any money</p> -->
-            <!-- <a href="address.html" style=" text-decoration: none;">
-                <div style="background-color: #f43397; color: white; height: 50px; font-size: 30px; text-align: center; padding-top: 3%; border-radius: 5px;">Continue</div>
-            </a> -->
+            <hr>
+            <table id="totalprice">
+                <th class="column1" style="font-size: 20px;
+                    color: black;">Order Total</th>
+                <th class="column2" style="font-size: 20px;
+                    color: black;"></th>
+            </table>
+            <p style="text-align: center; background-color: #f9f9f9; height: 20px;">Clicking on 'Continue' will not
+                deduct any money</p>
+            <a href="../pages/summary.html" style=" text-decoration: none;">
+                <div
+                    style="background-color: #f43397; color: white; height: 50px; font-size: 30px; text-align: center; padding-top: 3%; border-radius: 5px;">
+                    Continue</div>
+            </a>
             <!-- <img src="https://images.meesho.com/images/marketing/1588578650850.png" alt="Meesho safety" style="width: 100%;"> -->
         </div>
     </div>
@@ -70,4 +84,4 @@
 
 </html>
 
-<script src="address.js"></script>
+<script src="../js/payment.js"></script>

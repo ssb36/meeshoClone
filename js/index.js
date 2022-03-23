@@ -7,7 +7,7 @@ function playStore(){
 
 function cart(){
     window.open(
-        "empty_cart.html",
+        "../pages/empty_cart.html",
         "_self"
     )
 }
